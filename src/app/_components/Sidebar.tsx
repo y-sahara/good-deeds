@@ -43,7 +43,7 @@ const Sidebar = () => {
           {Menus.map((menu, index) => (
             <li
               key={index}
-              className="text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-white "
+              className="text-xl flex items-center gap-x-4 cursor-pointer p-2 hover:bg-white "
             >
               {menu.title}
             </li>

@@ -64,11 +64,11 @@ export default function Map() {
 
   return (
     <>
-      <Script
-        src={`https://maps.googleapis.com/maps/api/js?key=NEXT_PUBLIC_GOOGLEMAP_API`}
+      <Script className="h-screen max-w-10"
+        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLEMAP_API}`}
         onLoad={initMap}
       />
-      <div id="map" style={{ height: "800px", width: "100%" }} />
+      <div id="map" style={{ height: "600px", width: "100%" }} />
     </>
   );
 }
