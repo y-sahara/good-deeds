@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import AnimationIcon from "@mui/icons-material/Animation";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
@@ -14,11 +15,11 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex ">
       <div
         className={`${
           open ? "w-72" : "w-20"
-        } duration-300 h-screen bg-green-50 relative`}
+        } duration-300 h-screen bg-[#FFE5] relative rounded-lg` }
       >
         <ArrowBackIosNewIcon
           className={`absolute right-3 top-3 cursor-pointer w-6 h-6 p-1 rounded-full hover:bg-blue-200 transition-colors
@@ -27,11 +28,11 @@ const Sidebar = () => {
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-4 items-center">
-          <AnimationIcon
+          <MenuIcon
             fontSize="large"
             className={`cursor-pointer duration-500 transition-transform
                 ${open ? "rotate-[360deg]" : "rotate-[-360deg]"}`}
-          ></AnimationIcon>
+          ></MenuIcon>
         </div>
         {/* <h1
           className={`text-black origin-left font-bold text-xl first-letter

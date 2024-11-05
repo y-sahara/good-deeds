@@ -68,7 +68,7 @@ export default function Map() {
         src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLEMAP_API}`}
         onLoad={initMap}
       />
-      <div id="map" style={{ height: "600px", width: "100%" }} />
+      <div id="map" style={{ height: "99vh", width: "100%" }} />
     </>
   );
 }

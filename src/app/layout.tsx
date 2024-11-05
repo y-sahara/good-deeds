@@ -1,6 +1,5 @@
 import "./globals.css";
 import Sidebar from "./_components/Sidebar";
-import Header from "@/app/_components/Header";
 
 export default function RootLayout({
   children,
