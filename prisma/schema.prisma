@@ -6,14 +6,15 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 //Userテーブル
 model User {
   id            Int      @id @default(autoincrement())
-  supasubabaseUserId   String   @unique // auth.users テーブルの id を参照
+  supabaseUserId   String   @unique // auth.users テーブルの id を参照
   username      String   @unique
   isPrivate     Boolean  @default(false)
   userImage     String?

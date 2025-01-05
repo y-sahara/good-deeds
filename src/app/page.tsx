@@ -1,29 +1,20 @@
-import Map from "./_components/Map";
-// import Header from "@/app/_components/Header";
-
-// export default function Home() {
-//   return (
-//     <>
-//     <main className="">
-//       <Header/>
-
-//       <Map />
-//     </main>
-//     </>
-//   );
+import React from 'react';
+import { Header } from './_components/Header';
+import { Hero } from './_components/Hero';
+import { Features } from './_components/Features';
+import MapPreview from './_components/MapPreview';
+import { CallToAction } from './_components/CallToAction';
 // }
 
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-
-      <main className="">
-        <Map />
-
-        {/* ここにメインコンテンツを配置 */}
-        {/* その他のコンテンツ */}
-      </main>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <Features />
+      <MapPreview />
+      <CallToAction />
     </div>
   );
 }

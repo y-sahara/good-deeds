@@ -10,7 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex h-screen w-full">
-          <Sidebar />
+          {/* <Sidebar /> */}
           <main className="flex-1 overflow-auto">{children}</main>
         </div>
       </body>

@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import AnimationIcon from "@mui/icons-material/Animation";
 import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
